@@ -3,5 +3,5 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'create database indie-expo_test;' -U postgres
+  - psql -c 'create database indieexpo_test;' -U postgres
   - "bundle exec rake db:migrate"
