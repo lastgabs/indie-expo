@@ -5,15 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', "5.1.0.rc1"
+gem 'rails'
 gem 'arel', github: "rails/arel"
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', github: "rails/sass-rails"
+
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 # Use Uglifier as compressor for JavaScript assets
