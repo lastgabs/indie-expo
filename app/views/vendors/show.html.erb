@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @vendor.name %></h1>
+
+<p>
+  <strong>Email:</strong>
+  <%= @vendor.email %>
+</p>
+
+<p>
+  <strong>Store:</strong>
+  <%= @vendor.store %>
+</p>
+
+<p>
+  <strong>Facebook page:</strong>
+  <%= @vendor.facebook_page %>
+</p>
+
+<p>
+  <strong>Facebook group:</strong>
+  <%= @vendor.facebook_group %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @vendor.instagram %>
+</p>
+
+<p>
+  <strong>Pinterest:</strong>
+  <%= @vendor.pinterest %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @vendor.description %>
+</p>
+
+<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
+<%= link_to 'Back', vendors_path %>

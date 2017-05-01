@@ -1,0 +1,57 @@
+<%= form_with(model: vendor, local: true) do |form| %>
+  <% if vendor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vendor.errors.count, "error") %> prohibited this vendor from being saved:</h2>
+
+      <ul>
+      <% vendor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :vendor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :vendor_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store %>
+    <%= form.text_field :store, id: :vendor_store %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook_page %>
+    <%= form.text_field :facebook_page, id: :vendor_facebook_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook_group %>
+    <%= form.text_field :facebook_group, id: :vendor_facebook_group %>
+  </div>
+
+  <div class="field">
+    <%= form.label :instagram %>
+    <%= form.text_field :instagram, id: :vendor_instagram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pinterest %>
+    <%= form.text_field :pinterest, id: :vendor_pinterest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :vendor_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

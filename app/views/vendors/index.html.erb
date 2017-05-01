@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vendors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Store</th>
+      <th>Facebook page</th>
+      <th>Facebook group</th>
+      <th>Instagram</th>
+      <th>Pinterest</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vendors.each do |vendor| %>
+      <tr>
+        <td><%= vendor.name %></td>
+        <td><%= vendor.email %></td>
+        <td><%= vendor.store %></td>
+        <td><%= vendor.facebook_page %></td>
+        <td><%= vendor.facebook_group %></td>
+        <td><%= vendor.instagram %></td>
+        <td><%= vendor.pinterest %></td>
+        <td><%= vendor.description %></td>
+        <td><%= link_to 'Show', vendor %></td>
+        <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
+        <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vendor', new_vendor_path %>

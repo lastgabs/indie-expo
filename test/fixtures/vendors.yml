@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Indie Vendor Name
+  email: indie_vendor@gmail.com
+  store: indievendor.com
+  facebook_page: MyString
+  facebook_group: MyString
+  instagram: MyString
+  pinterest: MyString
+  description: MyText
